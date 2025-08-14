@@ -1,0 +1,27 @@
+# #!/bin/sh
+# . "$(dirname "$0")/_/husky.sh"
+
+# echo "🔍 Running ESLint..."
+# npm run lint
+
+# if [ $? -ne 0 ]; then
+#   echo "❌ Lint errors found. Aborting commit."
+#   exit 1
+# fi
+
+# echo "🧹 Cleaning build output..."
+# rm -rf dist
+
+# echo "🏗️ Running build..."
+# npm run build
+
+# if [ $? -ne 0 ]; then
+#   echo "❌ Build failed. Aborting commit."
+#   exit 1
+# fi
+
+# echo "✅ All checks passed. Proceeding with commit..."
+
+
+npx lint-staged
+npm run build
