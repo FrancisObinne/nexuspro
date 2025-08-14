@@ -38,10 +38,10 @@ const HomePage = () => {
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
               Aligned with our vision to foster communities of trust and
-              empowerment, C-Level is dedicated to cultivating a dynamic space
+              empowerment, NexusPro is dedicated to cultivating a dynamic space
               where leaders—both men and women—can excel. Moving beyond
               conventional networking, we serve as a catalyst for tangible
-              growth in both personal and professional spheres. C-Level offers a
+              growth in both personal and professional spheres. NexusPro offers a
               platform for authentic exchange of experiences, insights, and
               solutions, driving innovation and pushing boundaries to achieve
               lasting impact together.
@@ -58,7 +58,7 @@ const HomePage = () => {
             <div>
               <h3 className="text-xl font-bold text-blue-600">Mission</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                To empower Africa’s C-level leaders—both men and women—by
+                To empower Africa’s NexusPro leaders—both men and women—by
                 connecting them with global peers, fostering growth, and driving
                 sustainable economic impact worldwide through exclusive, high
                 caliber programs.
@@ -67,7 +67,7 @@ const HomePage = () => {
             <div>
               <h3 className="text-xl font-bold text-blue-600">What We Do</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                At C-Level Kenya, we curate luxurious C-Suite–focused events in
+                At NexusPro Kenya, we curate luxurious C-Suite–focused events in
                 partnership with premier venues and EABL, delivering
                 unparalleled experiences for executives. Each event features a
                 distinguished guest of honour sharing insights on breaking
@@ -87,7 +87,7 @@ const HomePage = () => {
           Empower Your Leadership Journey Today
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400 mt-2">
-          Join Clevel and connect with influential African women leaders.
+          Join NexusPro and connect with influential African women leaders.
         </p>
         <div className="mt-6 space-x-4">
           <Button

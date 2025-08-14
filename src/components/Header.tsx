@@ -1,19 +1,31 @@
 // src/components/Header.tsx
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState } from "../app/store";
 import { Button } from "@/components/button";
 import ThemeToggle from "./ThemeToggle";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
 import { LogOut, UserCircle, Menu, X } from "lucide-react";
 
 const Header = () => {
+  const navigate = useNavigate();
   const { user } = useSelector((state: RootState) => state.auth);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { profile } = useSelector((state: RootState) => state.profile);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/login");
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
   };
 
   return (
@@ -83,14 +95,25 @@ const Header = () => {
                   <UserCircle size={20} />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" className="hidden md:flex">
-                <Link to="/logout">
+              <Button
+                asChild
+                variant="ghost"
+                className="hidden md:flex"
+                onClick={handleLogout}
+              >
+                <Link to="">
                   <LogOut size={20} className="mr-2" />
                   Log Out
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="icon" className="md:hidden">
-                <Link to="/logout">
+              <Button
+                asChild
+                variant="ghost"
+                size="icon"
+                className="md:hidden"
+                onClick={handleLogout}
+              >
+                <Link to="">
                   <LogOut size={20} />
                 </Link>
               </Button>

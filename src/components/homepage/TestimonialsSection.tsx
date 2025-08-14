@@ -8,14 +8,14 @@ const testimonials = [
     name: "Emily Johnson",
     title: "VP of Marketing, Stellar Innovations Co.",
     quote:
-      "Joining Clevel has empowered me with a supportive network of women leaders, inspiring growth and innovation in my professional journey.",
+      "Joining NexusPro has empowered me with a supportive network of women leaders, inspiring growth and innovation in my professional journey.",
     avatar: "EJ",
   },
   {
     name: "Jane Smith",
     title: "Director of Operations, Apex Builders Inc.",
     quote:
-      "Clevel has provided me with incredible mentorship, networking opportunities, and resources that have significantly advanced my career and leadership skills.",
+      "NexusPro has provided me with incredible mentorship, networking opportunities, and resources that have significantly advanced my career and leadership skills.",
     avatar: "JS",
   },
 ];
@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
     <section className="py-16 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-12">
-          What our Members have to say about their experience at Clevel
+          What our Members have to say about their experience at NexusPro
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
